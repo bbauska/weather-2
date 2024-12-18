@@ -1,0 +1,468 @@
+
+
+<!doctype html>
+
+<html lang="en-US">
+
+<head>
+
+	<meta charset="UTF-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	
+<link rel="apple-touch-icon" sizes="180x180" href="https://davidmatthew.ie/wp-content/themes/david-matthew-theme/img/favicons/apple-touch-icon.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://davidmatthew.ie/wp-content/themes/david-matthew-theme/img/favicons/favicon-32x32.png">
+
+<link rel="icon" type="image/png" sizes="16x16" href="https://davidmatthew.ie/wp-content/themes/david-matthew-theme/img/favicons/favicon-16x16.png">
+
+<link rel="manifest" href="https://davidmatthew.ie/wp-content/themes/david-matthew-theme/img/favicons/site.webmanifest">
+
+<link rel="shortcut icon" href="https://davidmatthew.ie/wp-content/themes/david-matthew-theme/img/favicons/favicon.ico">
+
+<meta name="msapplication-TileColor" content="#da532c">
+
+<meta name="msapplication-config" content="https://davidmatthew.ie/wp-content/themes/david-matthew-theme/img/favicons/browserconfig.xml">
+
+<meta name="theme-color" content="#ffffff">
+
+	<title>Book Release: Generative Art with JavaScript and SVG</title>
+<meta name='robots' content='max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://davidmatthew.ie/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='cookie-notice-front-css' href='https://davidmatthew.ie/wp-content/plugins/cookie-notice/css/front.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400i%2C600%2C700%2C900&#038;display=swap' type='text/css' media='all' />
+<link rel='stylesheet' id='prism-css' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-okaidia.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-5-css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tiny-slider-css' href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css' type='text/css' media='all' />
+<link rel='stylesheet' id='david-matthew-ie-css' href='https://davidmatthew.ie/wp-content/themes/david-matthew-theme/style.css' type='text/css' media='all' />
+<script type="text/javascript" id="cookie-notice-front-js-before">
+/* <![CDATA[ */
+var cnArgs = {"ajaxUrl":"https:\/\/davidmatthew.ie\/wp-admin\/admin-ajax.php","nonce":"4819bed963","hideEffect":"fade","position":"bottom","onScroll":false,"onScrollOffset":100,"onClick":false,"cookieName":"cookie_notice_accepted","cookieTime":2592000,"cookieTimeRejected":2592000,"globalCookie":false,"redirection":false,"cache":true,"revokeCookies":false,"revokeCookiesOpt":"automatic"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://davidmatthew.ie/wp-content/plugins/cookie-notice/js/front.min.js" id="cookie-notice-front-js"></script>
+<link rel="https://api.w.org/" href="https://davidmatthew.ie/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://davidmatthew.ie/wp-json/wp/v2/posts/801" /><link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://davidmatthew.ie/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdavidmatthew.ie%2Fbook-release-generative-art-with-javascript-and-svg%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://davidmatthew.ie/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdavidmatthew.ie%2Fbook-release-generative-art-with-javascript-and-svg%2F&#038;format=xml" />
+<link rel="canonical" href="https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/">
+<meta name="description" content="Plug time! Apress have just released my book Generative Art with JavaScript and SVG. If you&#039;re interested in creative coding, read on!">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6N6CQF');</script>
+<!-- End Google Tag Manager -->
+<meta property="og:title" content="Book Release: Generative Art with JavaScript and SVG">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://davidmatthew.ie/wp-content/uploads/gen-art-js-post.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="1280">
+<meta property="og:image:alt" content="Gen Art Js Post">
+<meta property="og:description" content="Plug time! Apress have just released my book Generative Art with JavaScript and SVG. If you&#039;re interested in creative coding, read on!">
+<meta property="og:url" content="https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="David Matthew">
+<meta property="article:published_time" content="2024-04-09T14:51:07+00:00">
+<meta property="article:modified_time" content="2024-04-09T14:51:08+00:00">
+<meta property="og:updated_time" content="2024-04-09T14:51:08+00:00">
+<meta property="article:section" content="Blog">
+<meta property="article:tag" content="Generative Art">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="SVG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://davidmatthew.ie/wp-content/uploads/gen-art-js-post.png">
+<meta name="author" content="davidmatthew">
+<meta name="date" content="2024-04-09T14:51:07+00:00">
+
+<!-- BEGIN recaptcha, injected by plugin wp-recaptcha-integration  -->
+
+<!-- END recaptcha -->
+<link rel="icon" href="https://davidmatthew.ie/wp-content/uploads/cropped-dm-logo-2019-favicon-512x512-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://davidmatthew.ie/wp-content/uploads/cropped-dm-logo-2019-favicon-512x512-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://davidmatthew.ie/wp-content/uploads/cropped-dm-logo-2019-favicon-512x512-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://davidmatthew.ie/wp-content/uploads/cropped-dm-logo-2019-favicon-512x512-1-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			html {
+  scroll-behavior: smooth;
+}
+
+#primary p, #primary li, #secondary p, #secondary li {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+code {
+	font-family: monospace;
+	font-size: 1rem;
+	background-color: #dedee5;
+	padding: 2px 5px;
+	border-radius: 5px;
+}
+
+#menu-desktop li a {
+	height: 100%;
+	padding-top: 0;
+	display: flex;
+	flex-direction: row;
+  align-items: center;
+}
+
+pre[class*=language-]{
+	margin: 1em 0;
+}
+
+code[class*=language-]{
+	margin-left: -5px;
+}
+
+.wp-block-image img {
+	object-fit: contain;
+}
+
+#homepage-content #title img {
+	border: 1px solid #ddd;
+}
+
+
+
+		</style>
+		
+</head>
+
+<body class="post-template-default single single-post postid-801 single-format-standard cookies-not-set">
+
+
+<nav class="nav" role="navigation" aria-label="main navigation">
+
+	<div class="navbar container">
+
+		<a class="logo" href="https://davidmatthew.ie">
+
+			<img src="https://davidmatthew.ie/wp-content/themes/david-matthew-theme/img/dm-logo-2019.svg" alt="Logo">
+
+		</a>
+
+		<div id="navbar-toggle">
+
+			<div></div>
+			<div></div>
+			<div></div>
+
+		</div>
+
+		<div id="menu-desktop">
+
+			<ul id="menu-menu-1" class="menu"><li id="menu-item-105" class="fas fa-bookmark menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-105"><a href="https://davidmatthew.ie/category/blog/">Blog</a></li>
+<li id="menu-item-36" class="fas fa-code menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-36"><a>Code</a>
+<ul class="sub-menu">
+	<li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a target="_blank" href="https://profiles.wordpress.org/davidmatthew/#content-plugins">WordPress Plugins</a></li>
+	<li id="menu-item-99" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99"><a target="_blank" href="https://github.com/davidmatthew-ie/david-matthew-theme">This Website</a></li>
+	<li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a target="_blank" href="https://github.com/davidmatthew-ie?tab=repositories">All Repositories</a></li>
+</ul>
+</li>
+<li id="menu-item-497" class="fas fa-palette menu-item menu-item-type-custom menu-item-object-custom menu-item-497"><a target="_blank" href="https://www.instagram.com/davidmatthew_ie/">Art</a></li>
+<li id="menu-item-47" class="fas fa-music menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a target="_blank" href="https://open.spotify.com/artist/2CVCluSD7hTfhhJCkm0C3x">Music</a></li>
+<li id="menu-item-101" class="fas fa-envelope-open-text menu-item menu-item-type-custom menu-item-object-custom menu-item-101"><a target="_blank" href="/cdn-cgi/l/email-protection#2b4f4a5d424f464a5f5f434e5c05424e6b4c464a424705484446">Contact Me</a></li>
+</ul>
+		</div>
+
+	</div>
+
+	<div id="menu-mobile">
+
+		<ul id="menu-menu-2" class="menu"><li class="fas fa-bookmark menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-105"><a href="https://davidmatthew.ie/category/blog/">Blog</a></li>
+<li class="fas fa-code menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-36"><a>Code</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a target="_blank" href="https://profiles.wordpress.org/davidmatthew/#content-plugins">WordPress Plugins</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99"><a target="_blank" href="https://github.com/davidmatthew-ie/david-matthew-theme">This Website</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a target="_blank" href="https://github.com/davidmatthew-ie?tab=repositories">All Repositories</a></li>
+</ul>
+</li>
+<li class="fas fa-palette menu-item menu-item-type-custom menu-item-object-custom menu-item-497"><a target="_blank" href="https://www.instagram.com/davidmatthew_ie/">Art</a></li>
+<li class="fas fa-music menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a target="_blank" href="https://open.spotify.com/artist/2CVCluSD7hTfhhJCkm0C3x">Music</a></li>
+<li class="fas fa-envelope-open-text menu-item menu-item-type-custom menu-item-object-custom menu-item-101"><a target="_blank" href="/cdn-cgi/l/email-protection#3155504758555c5045455954461f585471565c50585d1f525e5c">Contact Me</a></li>
+</ul>
+<div class="social-icons">
+
+	
+		<a class="animated fadeInUp" href="https://www.linkedin.com/in/david-matthew/" target="_blank">
+
+			<i class="fab fa-linkedin-in"></i>
+
+		</a>
+
+		
+		<a class="animated fadeInUp" href="https://profiles.wordpress.org/davidmatthew/#content-plugins" target="_blank">
+
+			<i class="fab fa-wordpress-simple"></i>
+
+		</a>
+
+		
+		<a class="animated fadeInUp" href="https://github.com/davidmatthew-ie" target="_blank">
+
+			<i class="fab fa-github"></i>
+
+		</a>
+
+		
+		<a class="animated fadeInUp" href="https://www.goodreads.com/user/show/66129526-david-matthew" target="_blank">
+
+			<i class="fab fa-goodreads-g"></i>
+
+		</a>
+
+		
+		<a class="animated fadeInUp" href="https://www.instagram.com/davidmatthew_ie/" target="_blank">
+
+			<i class="fab fa-instagram"></i>
+
+		</a>
+
+		
+		<a class="animated fadeInUp" href="https://open.spotify.com/artist/2CVCluSD7hTfhhJCkm0C3x" target="_blank">
+
+			<i class="fab fa-spotify"></i>
+
+		</a>
+
+		
+</div>
+
+	</div>
+
+</nav>
+
+<div class="container content-area flex-row">
+
+	<main id="primary">
+
+		
+<article id="post-801" class="post-801 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-news tag-generative-art tag-javascript tag-svg">
+
+	
+<header class="entry-header">
+
+	<div class="header-content">
+
+		<h1 class="entry-title animated fadeInDown">Book Release: Generative Art with JavaScript and SVG</h1>
+		<span class="animated fadeInLeft"><i class="fas fa-calendar-alt"></i>9 Apr 2024</span>
+
+		<span class="animated fadeInLeft"><i class="fas fa-tags"></i>Tags: <a href="https://davidmatthew.ie/tag/generative-art/" rel="tag">Generative Art</a>, <a href="https://davidmatthew.ie/tag/javascript/" rel="tag">JavaScript</a>, <a href="https://davidmatthew.ie/tag/svg/" rel="tag">SVG</a></span>
+
+	</div>
+
+</header>
+
+	<div class="entry-content animated fadeInUp">
+
+		
+<p>Plug time! Apress have just released my book <a href="https://link.springer.com/book/10.1007/979-8-8688-0086-3" data-type="link" data-id="https://link.springer.com/book/10.1007/979-8-8688-0086-3" target="_blank" rel="noreferrer noopener">Generative Art with JavaScript and SVG</a>. It&#8217;s something I&#8217;ve been working away at for a while now (I started it back in Sept 2022) so it&#8217;s nice to finally have something physical I can hold in my hands.</p>
+
+
+<div class="wp-block-image">
+<figure class="alignleft size-medium"><img fetchpriority="high" decoding="async" width="226" height="300" src="https://davidmatthew.ie/wp-content/uploads/physical-book-gen-art-js-svg-226x300.jpg" alt="Physical Book Gen Art Js Svg" class="wp-image-803" srcset="https://davidmatthew.ie/wp-content/uploads/physical-book-gen-art-js-svg-226x300.jpg 226w, https://davidmatthew.ie/wp-content/uploads/physical-book-gen-art-js-svg-771x1024.jpg 771w, https://davidmatthew.ie/wp-content/uploads/physical-book-gen-art-js-svg-768x1020.jpg 768w, https://davidmatthew.ie/wp-content/uploads/physical-book-gen-art-js-svg-1157x1536.jpg 1157w, https://davidmatthew.ie/wp-content/uploads/physical-book-gen-art-js-svg-1542x2048.jpg 1542w, https://davidmatthew.ie/wp-content/uploads/physical-book-gen-art-js-svg-scaled.jpg 1928w" sizes="(max-width: 226px) 100vw, 226px" /></figure></div>
+
+
+<p>The back cover copy sums up best what it&#8217;s all about:</p>
+
+
+
+<p>This book introduces you to the exciting world of generative art and creative coding through the medium of JavaScript and Scalable Vector Graphics (SVG). Using tried and trusted techniques, you’ll tackle core topics such as randomness and regularity, noise and naturalistic variance, shape and path creation, filter effects, animation, and interactivity.</p>
+
+
+
+<p>In the process you’ll learn <a href="https://www.jsdelivr.com/package/npm/svjs" data-type="link" data-id="https://www.jsdelivr.com/package/npm/svjs" target="_blank" rel="noreferrer noopener">SvJs</a>, a JavaScript library that closely mirrors the SVG spec and makes scripting SVG intuitive and enjoyable. You’ll also study the craft of generative art and its creative process, along with JavaScript fundamentals, using modern ES6+ syntax. Each chapter will build upon the previous one, and those completely new to programming will be given a primer to help them find their feet.</p>
+
+
+
+<p><em>Generative Art with JavaScript and SVG</em>&nbsp;will take you on a fun journey, peppered with plenty of sketches throughout, designed not only to explain, but to inspire.</p>
+
+
+
+<p><strong>You Will:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Structure and randomise compositions.</li>
+
+
+
+<li>Understand the different types of randomness and their probability distributions.</li>
+
+
+
+<li>Create organic variance with the SvJs Noise module.</li>
+
+
+
+<li>Apply SVG filter effects in a generative fashion.</li>
+
+
+
+<li>Explore different approaches to animating with SVG.</li>
+
+
+
+<li>Make your compositions dynamic and interactive.</li>
+</ul>
+
+
+
+<p><strong>Who is it for?</strong></p>
+
+
+
+<p>Web developers, designers and creative coders with an interest in digital/generative art, as well as artists who are interested in learning to code with JavaScript.</p>
+
+
+
+<p><strong>For more, see:</strong></p>
+
+
+
+<p><a href="https://davidmatthew.ie/generative-art-javascript-svg/" data-type="page" data-id="572">The dedicated book resources page containing all interactive examples.</a></p>
+
+	</div><!-- .entry-content -->
+
+</article><!-- #post-801 -->
+
+<div id="comments" class="comments-area">
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/book-release-generative-art-with-javascript-and-svg/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://davidmatthew.ie/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p><div  id="g-recaptcha-0" class="g-recaptcha" data-sitekey="6LeGrvIZAAAAADZNlONy1VYeBll--D6f35yax2aj" data-theme="light"></div><noscript>Please enable JavaScript to submit this form.<br></noscript></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='801' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+
+	</main>
+
+	
+<aside id="secondary" class="widget-area animated fadeInDown">
+
+	
+		<section id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widget-title">Recent Posts</h2>
+		<ul>
+											<li>
+					<a href="https://davidmatthew.ie/11twyg-eleventy-with-twig-and-yaml/">11twyg &#8211; Eleventy with Twig and YAML</a>
+									</li>
+											<li>
+					<a href="https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/" aria-current="page">Book Release: Generative Art with JavaScript and SVG</a>
+									</li>
+											<li>
+					<a href="https://davidmatthew.ie/how-to-launch-an-appimage-ubuntu/">How to Launch an AppImage from the Ubuntu Sidebar</a>
+									</li>
+											<li>
+					<a href="https://davidmatthew.ie/colour-perception-contrast-and-web-accessibility/">Colour Perception, Contrast and Web Accessibility</a>
+									</li>
+											<li>
+					<a href="https://davidmatthew.ie/chatgpt-the-content-creators-friend-or-foe/">ChatGPT: The content creator’s friend or foe?</a>
+									</li>
+					</ul>
+
+		</section><section id="weather-map-5" class="widget ventus weather-map-widget"><h2 class="widget-title">The Weather Where I Am</h2><iframe title="Ventus Weather Map Widget 52.515 -8.505" loading="lazy" style="box-sizing: border-box; width: 100%;  height: 350px;  border-radius: 3px" src="https://embed.windy.com/embed2.html?lat=52.515&lon=-8.505&zoom=7&overlay=wind&level=700h&marker=&pressure=&detailLat=52.515&detailLon=-8.505&metricWind=default&metricTemp=°C&detail=&calendar=now&product=ecmwf&menu=&message=true&type=map&location=coordinates&radarRange=-1" frameborder="0"></iframe></section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>
+			<ul>
+					<li class="cat-item cat-item-12"><a href="https://davidmatthew.ie/category/blog/">Blog</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://davidmatthew.ie/category/news/">News</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://davidmatthew.ie/category/tutorials/">Tutorials</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://davidmatthew.ie/category/uncategorized/">Uncategorized</a>
+</li>
+			</ul>
+
+			</section><section id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://davidmatthew.ie/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></section>
+</aside>
+
+</div>
+
+
+<footer id="footer">
+
+	<p>&copy; David Matthew 2024</p>
+
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/ld+json" id="slim-seo-schema">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://davidmatthew.ie/#website","url":"https://davidmatthew.ie/","name":"David Matthew","potentialAction":{"@id":"https://davidmatthew.ie/#searchaction"},"publisher":{"@id":"https://davidmatthew.ie/#organization"}},{"@type":"SearchAction","@id":"https://davidmatthew.ie/#searchaction","target":"https://davidmatthew.ie/?s={search_term_string}","query-input":"required name=search_term_string"},{"@type":"BreadcrumbList","name":"Breadcrumbs","@id":"https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/#breadcrumblist","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://davidmatthew.ie/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://davidmatthew.ie/category/blog/"}]},{"@type":"WebPage","@id":"https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/#webpage","url":"https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/","inLanguage":"en_US","name":"Book Release: Generative Art with JavaScript and SVG","description":"Plug time! Apress have just released my book Generative Art with JavaScript and SVG. If you're interested in creative coding, read on!","datePublished":"2024-04-09T14:51:07+00:00","dateModified":"2024-04-09T14:51:08+00:00","isPartOf":{"@id":"https://davidmatthew.ie/#website"},"breadcrumb":{"@id":"https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/#breadcrumblist"},"primaryImageOfPage":{"@id":"https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/#thumbnail"},"image":{"@id":"https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/#thumbnail"}},{"@type":"Organization","@id":"https://davidmatthew.ie/#organization","url":"https://davidmatthew.ie/","name":"David Matthew"},{"@type":"ImageObject","@id":"https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/#thumbnail","url":"https://davidmatthew.ie/wp-content/uploads/gen-art-js-post.png","width":1280,"height":1280},{"@type":"Article","@id":"https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/#article","url":"https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/","headline":"Book Release: Generative Art with JavaScript and SVG","datePublished":"2024-04-09T14:51:07+00:00","dateModified":"2024-04-09T14:51:08+00:00","wordCount":292,"keywords":["Generative Art","JavaScript","SVG"],"articleSection":["Blog","News"],"isPartOf":{"@id":"https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/#webpage"},"mainEntityOfPage":{"@id":"https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/#webpage"},"image":{"@id":"https://davidmatthew.ie/book-release-generative-art-with-javascript-and-svg/#thumbnail"},"publisher":{"@id":"https://davidmatthew.ie/#organization"},"author":{"@id":"https://davidmatthew.ie/#/schema/person/2fe21967091bfe21ab79e576d039833c"}},{"@type":"Person","@id":"https://davidmatthew.ie/#/schema/person/2fe21967091bfe21ab79e576d039833c","url":"https://davidmatthew.ie","name":"davidmatthew","image":"https://secure.gravatar.com/avatar/64a9a7c454931970667f97c9db07940f?s=96&d=mm&r=g"}]}</script>
+<!-- BEGIN recaptcha, injected by plugin wp-recaptcha-integration  -->
+<script type="text/javascript">
+		var recaptcha_widgets={};
+		function wp_recaptchaLoadCallback(){
+			try {
+				grecaptcha;
+			} catch(err){
+				return;
+			}
+			var e = document.querySelectorAll ? document.querySelectorAll('.g-recaptcha:not(.wpcf7-form-control)') : document.getElementsByClassName('g-recaptcha'),
+				form_submits;
+
+			for (var i=0;i<e.length;i++) {
+				(function(el){
+					var wid;
+					// check if captcha element is unrendered
+					if ( ! el.childNodes.length) {
+						wid = grecaptcha.render(el,{
+							'sitekey':'6LeGrvIZAAAAADZNlONy1VYeBll--D6f35yax2aj',
+							'theme':el.getAttribute('data-theme') || 'light'
+						});
+						el.setAttribute('data-widget-id',wid);
+					} else {
+						wid = el.getAttribute('data-widget-id');
+						grecaptcha.reset(wid);
+					}
+				})(e[i]);
+			}
+		}
+
+		// if jquery present re-render jquery/ajax loaded captcha elements
+		if ( typeof jQuery !== 'undefined' )
+			jQuery(document).ajaxComplete( function(evt,xhr,set){
+				if( xhr.responseText && xhr.responseText.indexOf('6LeGrvIZAAAAADZNlONy1VYeBll--D6f35yax2aj') !== -1)
+					wp_recaptchaLoadCallback();
+			} );
+
+		</script><script src="https://www.google.com/recaptcha/api.js?onload=wp_recaptchaLoadCallback&#038;render=explicit" async defer></script>
+<!-- END recaptcha -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js" id="prism-core-js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js" id="prism-autoloader-js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" id="tiny-slider-js"></script>
+<script type="text/javascript" src="https://davidmatthew.ie/wp-content/themes/david-matthew-theme/js/main.js" id="main-js"></script>
+<script type="text/javascript" src="https://davidmatthew.ie/wp-includes/js/comment-reply.min.js" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+
+		<!-- Cookie Notice plugin v2.5.4 by Hu-manity.co https://hu-manity.co/ -->
+		<div id="cookie-notice" role="dialog" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom" aria-label="Cookie Notice" style="background-color: rgba(68,68,68,1);"><div class="cookie-notice-container" style="color: #fff"><span id="cn-notice-text" class="cn-text-container">I use cookies because, you know, you can't not these days. If you continue to use this site we'll assume you're ok with this! :)</span><span id="cn-notice-buttons" class="cn-buttons-container"><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button" aria-label="Yep" style="background-color: #00a99d">Yep</a><a href="https://davidmatthew.ie/privacy-policy/" target="_blank" id="cn-more-info" class="cn-more-info cn-button" aria-label="Privacy policy" style="background-color: #00a99d">Privacy policy</a></span><span id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" title="No"></span></div>
+			
+		</div>
+		<!-- / Cookie Notice plugin -->
+</body>
+</html>
+
+<!-- Cached by WP-Optimize (gzip) - https://getwpo.com - Last modified: December 17, 2024 18:55 (UTC:1) -->
